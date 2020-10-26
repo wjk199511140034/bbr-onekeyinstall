@@ -63,6 +63,11 @@ linux-kernel-ml-headers-4.12.10-1
 
 yum groupinstall -y "Development Tools"
 
+若安装失败，可尝试
+yum groups mark install "Development Tools"
+yum groups mark convert "Development Tools"
+yum groupinstall "Development Tools"
+继续运行
 wget https://raw.githubusercontent.com/wjk199511140034/bbr-onekeyinstall/master/general/General/CentOS/source/tcp_nanqinlang.c
 wget -O Makefile https://raw.githubusercontent.com/wjk199511140034/bbr-onekeyinstall/master/general/Makefile/Makefile-CentOS
 make && make install
